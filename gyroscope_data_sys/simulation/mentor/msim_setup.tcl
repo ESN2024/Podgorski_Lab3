@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 646 win32 2024.01.17.11:57:57
+# ACDS 18.1 625 win32 2024.01.17.14:15:19
 
 # ----------------------------------------
 # Initialize variables
@@ -113,7 +113,7 @@ if ![info exists QSYS_SIMDIR] {
 }
 
 if ![info exists QUARTUS_INSTALL_DIR] { 
-  set QUARTUS_INSTALL_DIR "C:/intelfpga/18.1/quartus/"
+  set QUARTUS_INSTALL_DIR "C:/intelfpga_lite/18.1/quartus/"
 }
 
 if ![info exists USER_DEFINED_COMPILE_OPTIONS] { 
@@ -195,16 +195,16 @@ ensure_lib                                              ./libraries/rsp_mux/
 vmap       rsp_mux                                      ./libraries/rsp_mux/                                     
 ensure_lib                                              ./libraries/rsp_demux/                                   
 vmap       rsp_demux                                    ./libraries/rsp_demux/                                   
-ensure_lib                                              ./libraries/cmd_mux_001/                                 
-vmap       cmd_mux_001                                  ./libraries/cmd_mux_001/                                 
+ensure_lib                                              ./libraries/cmd_mux_002/                                 
+vmap       cmd_mux_002                                  ./libraries/cmd_mux_002/                                 
 ensure_lib                                              ./libraries/cmd_mux/                                     
 vmap       cmd_mux                                      ./libraries/cmd_mux/                                     
 ensure_lib                                              ./libraries/cmd_demux_001/                               
 vmap       cmd_demux_001                                ./libraries/cmd_demux_001/                               
 ensure_lib                                              ./libraries/cmd_demux/                                   
 vmap       cmd_demux                                    ./libraries/cmd_demux/                                   
-ensure_lib                                              ./libraries/router_003/                                  
-vmap       router_003                                   ./libraries/router_003/                                  
+ensure_lib                                              ./libraries/router_004/                                  
+vmap       router_004                                   ./libraries/router_004/                                  
 ensure_lib                                              ./libraries/router_002/                                  
 vmap       router_002                                   ./libraries/router_002/                                  
 ensure_lib                                              ./libraries/router_001/                                  
@@ -233,14 +233,14 @@ ensure_lib                                              ./libraries/timer_0/
 vmap       timer_0                                      ./libraries/timer_0/                                     
 ensure_lib                                              ./libraries/pio_0/                                       
 vmap       pio_0                                        ./libraries/pio_0/                                       
+ensure_lib                                              ./libraries/opencores_i2c_0/                             
+vmap       opencores_i2c_0                              ./libraries/opencores_i2c_0/                             
 ensure_lib                                              ./libraries/onchip_memory2_0/                            
 vmap       onchip_memory2_0                             ./libraries/onchip_memory2_0/                            
 ensure_lib                                              ./libraries/nios2_gen2_0/                                
 vmap       nios2_gen2_0                                 ./libraries/nios2_gen2_0/                                
 ensure_lib                                              ./libraries/jtag_uart_0/                                 
 vmap       jtag_uart_0                                  ./libraries/jtag_uart_0/                                 
-ensure_lib                                              ./libraries/i2cslave_to_avlmm_bridge_0/                  
-vmap       i2cslave_to_avlmm_bridge_0                   ./libraries/i2cslave_to_avlmm_bridge_0/                  
 
 # ----------------------------------------
 # Compile device library files
@@ -285,13 +285,13 @@ alias com {
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                     
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                               -work rsp_mux                                     
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                   
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                 
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                               -work cmd_mux_001                                 
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_mux_002.sv"                       -work cmd_mux_002                                 
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                               -work cmd_mux_002                                 
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                     
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                               -work cmd_mux                                     
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                               
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                   
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_router_003.sv"                        -work router_003                                  
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_router_004.sv"                        -work router_004                                  
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_router_002.sv"                        -work router_002                                  
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_router_001.sv"                        -work router_001                                  
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0_router.sv"                            -work router                                      
@@ -312,19 +312,15 @@ alias com {
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/gyroscope_data_sys_mm_interconnect_0.v"                                    -work mm_interconnect_0                           
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/gyroscope_data_sys_timer_0.vhd"                                            -work timer_0                                     
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/gyroscope_data_sys_pio_0.vhd"                                              -work pio_0                                       
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/opencores_i2c.v"                                                           -work opencores_i2c_0                             
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/i2c_master_bit_ctrl.v"                                                     -work opencores_i2c_0                             
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/i2c_master_byte_ctrl.v"                                                    -work opencores_i2c_0                             
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/i2c_master_defines.v"                                                      -work opencores_i2c_0                             
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/i2c_master_top.v"                                                          -work opencores_i2c_0                             
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/timescale.v"                                                               -work opencores_i2c_0                             
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/gyroscope_data_sys_onchip_memory2_0.vhd"                                   -work onchip_memory2_0                            
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/gyroscope_data_sys_nios2_gen2_0.v"                                         -work nios2_gen2_0                                
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/gyroscope_data_sys_jtag_uart_0.vhd"                                        -work jtag_uart_0                                 
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_i2cslave_to_avlmm_bridge.v"                                         -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_avl_mst_intf_gen.v"                                               -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_clk_cnt.v"                                                        -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_condt_det.v"                                                      -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_databuffer.v"                                                     -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_rxshifter.v"                                                      -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_slvfsm.v"                                                         -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_spksupp.v"                                                        -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_txout.v"                                                          -work i2cslave_to_avlmm_bridge_0                  
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altr_i2c_txshifter.v"                                                      -work i2cslave_to_avlmm_bridge_0                  
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/gyroscope_data_sys.vhd"                                                                                                                 
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/gyroscope_data_sys_rst_controller.vhd"                                                                                                  
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/gyroscope_data_sys_rst_controller_001.vhd"                                                                                              
@@ -334,14 +330,14 @@ alias com {
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L timer_0 -L pio_0 -L onchip_memory2_0 -L nios2_gen2_0 -L jtag_uart_0 -L i2cslave_to_avlmm_bridge_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm $TOP_LEVEL_NAME
+  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L timer_0 -L pio_0 -L opencores_i2c_0 -L onchip_memory2_0 -L nios2_gen2_0 -L jtag_uart_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with novopt option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L timer_0 -L pio_0 -L onchip_memory2_0 -L nios2_gen2_0 -L jtag_uart_0 -L i2cslave_to_avlmm_bridge_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm $TOP_LEVEL_NAME
+  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L timer_0 -L pio_0 -L opencores_i2c_0 -L onchip_memory2_0 -L nios2_gen2_0 -L jtag_uart_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------

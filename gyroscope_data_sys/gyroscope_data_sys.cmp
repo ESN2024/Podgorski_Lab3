@@ -1,12 +1,10 @@
 	component gyroscope_data_sys is
 		port (
-			clk_clk                                                : in  std_logic                    := 'X'; -- clk
-			i2cslave_to_avlmm_bridge_0_conduit_end_conduit_data_in : in  std_logic                    := 'X'; -- conduit_data_in
-			i2cslave_to_avlmm_bridge_0_conduit_end_conduit_clk_in  : in  std_logic                    := 'X'; -- conduit_clk_in
-			i2cslave_to_avlmm_bridge_0_conduit_end_conduit_data_oe : out std_logic;                           -- conduit_data_oe
-			i2cslave_to_avlmm_bridge_0_conduit_end_conduit_clk_oe  : out std_logic;                           -- conduit_clk_oe
-			pio_digit_1_export                                     : out std_logic_vector(3 downto 0);        -- export
-			reset_reset_n                                          : in  std_logic                    := 'X'  -- reset_n
+			clk_clk               : in    std_logic                    := 'X'; -- clk
+			i2c_bwabwa_scl_pad_io : inout std_logic                    := 'X'; -- scl_pad_io
+			i2c_bwabwa_sda_pad_io : inout std_logic                    := 'X'; -- sda_pad_io
+			pio_digit_1_export    : out   std_logic_vector(3 downto 0);        -- export
+			reset_reset_n         : in    std_logic                    := 'X'  -- reset_n
 		);
 	end component gyroscope_data_sys;
 

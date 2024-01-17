@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Interface Protocols/Serial,Library/Processors and Peripherals/Peripherals,Project,Library/Processors and Peripherals,Library,Project/Interface Protocols/Serial,Project/Interface Protocols,Library/Interface Protocols,Library/Basic Functions/On Chip Memory,Library/Basic Functions" />
+ <window width="1938" height="1038" x="-9" y="-9" />
+ <generation simulation="VHDL" synthesis="VHDL" block_symbol_file="0" />
+ <hdlexample language="VHDL" />
+</preferences>

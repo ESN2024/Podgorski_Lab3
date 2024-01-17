@@ -29,13 +29,13 @@
    type="SYSTEM_VERILOG"
    library="rsp_demux" />
  <file
-   path="simulation/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_mux_001.sv"
+   path="simulation/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_mux_002.sv"
    type="SYSTEM_VERILOG"
-   library="cmd_mux_001" />
+   library="cmd_mux_002" />
  <file
    path="simulation/submodules/altera_merlin_arbitrator.sv"
    type="SYSTEM_VERILOG"
-   library="cmd_mux_001" />
+   library="cmd_mux_002" />
  <file
    path="simulation/submodules/gyroscope_data_sys_mm_interconnect_0_cmd_mux.sv"
    type="SYSTEM_VERILOG"
@@ -53,9 +53,9 @@
    type="SYSTEM_VERILOG"
    library="cmd_demux" />
  <file
-   path="simulation/submodules/gyroscope_data_sys_mm_interconnect_0_router_003.sv"
+   path="simulation/submodules/gyroscope_data_sys_mm_interconnect_0_router_004.sv"
    type="SYSTEM_VERILOG"
-   library="router_003" />
+   library="router_004" />
  <file
    path="simulation/submodules/gyroscope_data_sys_mm_interconnect_0_router_002.sv"
    type="SYSTEM_VERILOG"
@@ -185,6 +185,30 @@
    type="VHDL"
    library="pio_0" />
  <file
+   path="simulation/submodules/opencores_i2c.v"
+   type="VERILOG"
+   library="opencores_i2c_0" />
+ <file
+   path="simulation/submodules/i2c_master_bit_ctrl.v"
+   type="VERILOG"
+   library="opencores_i2c_0" />
+ <file
+   path="simulation/submodules/i2c_master_byte_ctrl.v"
+   type="VERILOG"
+   library="opencores_i2c_0" />
+ <file
+   path="simulation/submodules/i2c_master_defines.v"
+   type="VERILOG"
+   library="opencores_i2c_0" />
+ <file
+   path="simulation/submodules/i2c_master_top.v"
+   type="VERILOG"
+   library="opencores_i2c_0" />
+ <file
+   path="simulation/submodules/timescale.v"
+   type="VERILOG"
+   library="opencores_i2c_0" />
+ <file
    path="simulation/submodules/gyroscope_data_sys_onchip_memory2_0.vhd"
    type="VHDL"
    library="onchip_memory2_0" />
@@ -196,46 +220,6 @@
    path="simulation/submodules/gyroscope_data_sys_jtag_uart_0.vhd"
    type="VHDL"
    library="jtag_uart_0" />
- <file
-   path="simulation/submodules/altera_i2cslave_to_avlmm_bridge.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_avl_mst_intf_gen.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_clk_cnt.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_condt_det.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_databuffer.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_rxshifter.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_slvfsm.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_spksupp.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_txout.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
- <file
-   path="simulation/submodules/altr_i2c_txshifter.v"
-   type="VERILOG"
-   library="i2cslave_to_avlmm_bridge_0" />
  <file path="simulation/gyroscope_data_sys.vhd" type="VHDL" />
  <file path="simulation/gyroscope_data_sys_rst_controller.vhd" type="VHDL" />
  <file

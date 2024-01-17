@@ -1,49 +1,36 @@
-#include <sys/alt_stdio.h>
-#include <system.h>
-#include <altera_avalon_pio_regs.h>
-#include <sys/alt_irq.h>
+#include<stdio.h>
+#include<stdint.h>
+#include <unistd.h>
+#include "system.h"
 #include <io.h>
 #include <alt_types.h>
+#include <sys/alt_irq.h>
+#include <sys/alt_stdio.h>
 #include "sys/alt_sys_init.h"
-#include "unistd.h"
-#include <stdbool.h>
-#include "altera_avalon_timer_regs.h"
-#include "altera_avalon_timer.h"
-
-__uint32_t sleep_time=100000;
-__uint8_t val_count_unite=0;
-__uint8_t val_count_dizaine=0;
-__uint8_t val_count_centaine=0;
-
-void count(){
-    if(val_count_unite==9){
-        val_count_unite=0;
-        if(val_count_dizaine==9){
-            val_count_dizaine=0;
-            if(val_count_centaine==9){
-                val_count_centaine=0;
-            }
-            else{
-                val_count_centaine=val_count_centaine+1;
-            }
-        }
-        else {
-            val_count_dizaine=val_count_dizaine+1;
-        }
-    }
-    else {
-        val_count_unite=val_count_unite+1;
-    }
-    IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE,val_count_unite);
-    IOWR_ALTERA_AVALON_PIO_DATA(PIO_1_BASE,val_count_dizaine);
-    IOWR_ALTERA_AVALON_PIO_DATA(PIO_2_BASE,val_count_centaine);
-}
+#include"opencores_i2c.h"
+#include"opencores_i2c_regs.h"
 
 
-static void irqhandler_timer (void * context, alt_u32 id)
+
+#define ADXL345_addr 0x1D
+#define I2C_SPEED 100000
+#define DATAX0 0x32
+#define DATAX1 0x33
+#define DATAY0 0x34
+#define DATAY1 0x35
+#define DATAZ0 0x36
+#define DATAZ1 0x37
+
+unsigned int read_adxl345(int addr)
 {
-    count();
-    IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE, 0x01);
+	uint32_t capture=0;
+
+	I2C_start(OPENCORES_I2C_0_BASE,ADXL345_addr, 0);
+	I2C_write(OPENCORES_I2C_0_BASE,addr, 0);
+	I2C_start(OPENCORES_I2C_0_BASE,ADXL345_addr, 1);
+
+	capture = I2C_read(OPENCORES_I2C_0_BASE, 1);
+	return capture;
 }
 
 
@@ -52,13 +39,25 @@ static void irqhandler_timer (void * context, alt_u32 id)
 
 
 
-int main(){
-    //alt_printf("Hello NIOS II\n");
+int main()
+{
 
-    // Initialise le processus d'interruption pour le PIO qui controle les bouttons
-    alt_irq_register(TIMER_0_IRQ,NULL, (void*)irqhandler_timer);
+	uint8_t X0,X1,Y0,Y1,Z0,Z1;
+	I2C_init(OPENCORES_I2C_0_BASE,ALT_CPU_CPU_FREQ,I2C_SPEED);
 
-    while(1){
-    }
-    return 0;
+	while(1)
+	{
+		X0=read_adxl345(DATAX0);
+		X1=read_adxl345(DATAX1);
+		Y0=read_adxl345(DATAY0);
+		Y1=read_adxl345(DATAY1);
+		Z0=read_adxl345(DATAZ0);
+		Z1=read_adxl345(DATAZ1);
+
+		alt_printf("X: %x%x Y: %x%x Z: %x%x\n",X0,X1,Y0,Y1,Z0,Z1);
+		usleep(100000);
+	}
+
+
+
 }
