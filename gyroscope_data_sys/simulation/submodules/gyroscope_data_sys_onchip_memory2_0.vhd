@@ -27,12 +27,9 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 entity gyroscope_data_sys_onchip_memory2_0 is 
-        generic (
-                 INIT_FILE : STRING := "C:/intelFPGA/18.1/Quartus_FPGA_DE10Lite-TP/Software/App/mem_init/Led_chaser_onchip_memory2_0.hex"
-                 );
         port (
               -- inputs:
-                 signal address : IN STD_LOGIC_VECTOR (13 DOWNTO 0);
+                 signal address : IN STD_LOGIC_VECTOR (14 DOWNTO 0);
                  signal byteenable : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
                  signal chipselect : IN STD_LOGIC;
                  signal clk : IN STD_LOGIC;
@@ -71,7 +68,7 @@ GENERIC (
         signal wren_a : IN STD_LOGIC;
         signal byteena_a : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
         signal clock0 : IN STD_LOGIC;
-        signal address_a : IN STD_LOGIC_VECTOR (13 DOWNTO 0);
+        signal address_a : IN STD_LOGIC_VECTOR (14 DOWNTO 0);
         signal clocken0 : IN STD_LOGIC;
         signal data_a : IN STD_LOGIC_VECTOR (31 DOWNTO 0)
       );
@@ -87,10 +84,10 @@ begin
   the_altsyncram : altsyncram
     generic map(
       byte_size => 8,
-      init_file => INIT_FILE,
+      init_file => "UNUSED",
       lpm_type => "altsyncram",
-      maximum_depth => 10000,
-      numwords_a => 10000,
+      maximum_depth => 20000,
+      numwords_a => 20000,
       operation_mode => "SINGLE_PORT",
       outdata_reg_a => "UNREGISTERED",
       ram_block_type => "AUTO",
@@ -98,7 +95,7 @@ begin
       read_during_write_mode_port_a => "DONT_CARE",
       width_a => 32,
       width_byteena_a => 4,
-      widthad_a => 14
+      widthad_a => 15
     )
     port map(
             address_a => address,

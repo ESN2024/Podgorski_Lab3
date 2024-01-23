@@ -161,7 +161,7 @@ ACDS_VERSION := 18.1
 SIM_OPTIMIZE ?= 0
 
 # The CPU reset address as needed by elf2flash
-RESET_ADDRESS ?= 0x00010000
+RESET_ADDRESS ?= 0x00020000
 
 # The specific Nios II ELF file format to use.
 NIOS2_ELF_FORMAT ?= elf32-littlenios2
@@ -171,7 +171,7 @@ NIOS2_ELF_FORMAT ?= elf32-littlenios2
 #-------------------------------------
 
 # Memory: onchip_memory2_0
-MEM_0 := Led_chaser_onchip_memory2_0
+MEM_0 := gyroscope_data_sys_onchip_memory2_0
 $(MEM_0)_NAME := onchip_memory2_0
 $(MEM_0)_MEM_INIT_FILE_PARAM_NAME := INIT_FILE
 HEX_FILES += $(MEM_INIT_DIR)/$(MEM_0).hex
@@ -180,9 +180,9 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_0).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
-$(MEM_0)_START := 0x00010000
-$(MEM_0)_END := 0x00019c3f
-$(MEM_0)_SPAN := 0x00009c40
+$(MEM_0)_START := 0x00020000
+$(MEM_0)_END := 0x0003387f
+$(MEM_0)_SPAN := 0x00013880
 $(MEM_0)_HIERARCHICAL_PATH := onchip_memory2_0
 $(MEM_0)_WIDTH := 32
 $(MEM_0)_HEX_DATA_WIDTH := 32

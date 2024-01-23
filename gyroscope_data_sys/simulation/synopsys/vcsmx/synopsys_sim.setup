@@ -25,7 +25,8 @@ rst_controller:                               ./libraries/rst_controller/
 irq_mapper:                                   ./libraries/irq_mapper/                                  
 mm_interconnect_0:                            ./libraries/mm_interconnect_0/                           
 timer_0:                                      ./libraries/timer_0/                                     
-pio_0:                                        ./libraries/pio_0/                                       
+piobp:                                        ./libraries/piobp/                                       
+pio0_7seg:                                    ./libraries/pio0_7seg/                                   
 opencores_i2c_0:                              ./libraries/opencores_i2c_0/                             
 onchip_memory2_0:                             ./libraries/onchip_memory2_0/                            
 nios2_gen2_0:                                 ./libraries/nios2_gen2_0/                                
@@ -35,11 +36,13 @@ lpm_ver:                                      ./libraries/lpm_ver/
 sgate_ver:                                    ./libraries/sgate_ver/                                   
 altera_mf_ver:                                ./libraries/altera_mf_ver/                               
 altera_lnsim_ver:                             ./libraries/altera_lnsim_ver/                            
-fiftyfivenm_ver:                              ./libraries/fiftyfivenm_ver/                             
+cyclonev_ver:                                 ./libraries/cyclonev_ver/                                
+cyclonev_hssi_ver:                            ./libraries/cyclonev_hssi_ver/                           
+cyclonev_pcie_hip_ver:                        ./libraries/cyclonev_pcie_hip_ver/                       
 altera:                                       ./libraries/altera/                                      
 lpm:                                          ./libraries/lpm/                                         
 sgate:                                        ./libraries/sgate/                                       
 altera_mf:                                    ./libraries/altera_mf/                                   
 altera_lnsim:                                 ./libraries/altera_lnsim/                                
-fiftyfivenm:                                  ./libraries/fiftyfivenm/                                 
+cyclonev:                                     ./libraries/cyclonev/                                    
 LIBRARY_SCAN = TRUE

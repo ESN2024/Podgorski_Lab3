@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>17 janv. 2024 15:26:00</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1705501560322</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>23 janv. 2024 14:49:34</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1706017774850</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>.\</BspGeneratedLocation>
         <BspSettingsFile>..\BSP\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\gyroscope_data_sys.sopcinfo</SopcDesignFile>
@@ -900,31 +900,67 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
-                <addressRange>0x00010000 - 0x00019C3F</addressRange>
-                <addressSpan>40000</addressSpan>
+                <addressRange>0x00020000 - 0x0003387F</addressRange>
+                <addressSpan>80000</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>opencores_i2c_0</slaveDescriptor>
-                <addressRange>0x00021000 - 0x0002101F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>timer_0</slaveDescriptor>
-                <addressRange>0x00021020 - 0x0002103F</addressRange>
+                <addressRange>0x00041000 - 0x0004101F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x00021040 - 0x0002104F</addressRange>
+                <slaveDescriptor>opencores_i2c_0</slaveDescriptor>
+                <addressRange>0x00041020 - 0x0004103F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio5_7seg</slaveDescriptor>
+                <addressRange>0x00041040 - 0x0004104F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio4_7seg</slaveDescriptor>
+                <addressRange>0x00041050 - 0x0004105F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio3_7seg</slaveDescriptor>
+                <addressRange>0x00041060 - 0x0004106F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio2_7seg</slaveDescriptor>
+                <addressRange>0x00041070 - 0x0004107F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio1_7seg</slaveDescriptor>
+                <addressRange>0x00041080 - 0x0004108F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio0_7seg</slaveDescriptor>
+                <addressRange>0x00041090 - 0x0004109F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>piobp</slaveDescriptor>
+                <addressRange>0x000410A0 - 0x000410AF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00021050 - 0x00021057</addressRange>
+                <addressRange>0x000410B0 - 0x000410B7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

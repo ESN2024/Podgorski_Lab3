@@ -32,7 +32,8 @@ DEFINE rst_controller                               ./libraries/rst_controller/
 DEFINE irq_mapper                                   ./libraries/irq_mapper/                                  
 DEFINE mm_interconnect_0                            ./libraries/mm_interconnect_0/                           
 DEFINE timer_0                                      ./libraries/timer_0/                                     
-DEFINE pio_0                                        ./libraries/pio_0/                                       
+DEFINE piobp                                        ./libraries/piobp/                                       
+DEFINE pio0_7seg                                    ./libraries/pio0_7seg/                                   
 DEFINE opencores_i2c_0                              ./libraries/opencores_i2c_0/                             
 DEFINE onchip_memory2_0                             ./libraries/onchip_memory2_0/                            
 DEFINE nios2_gen2_0                                 ./libraries/nios2_gen2_0/                                
@@ -41,10 +42,12 @@ DEFINE altera_ver                                   ./libraries/altera_ver/
 DEFINE lpm_ver                                      ./libraries/lpm_ver/                                     
 DEFINE sgate_ver                                    ./libraries/sgate_ver/                                   
 DEFINE altera_mf_ver                                ./libraries/altera_mf_ver/                               
-DEFINE fiftyfivenm_ver                              ./libraries/fiftyfivenm_ver/                             
+DEFINE cyclonev_ver                                 ./libraries/cyclonev_ver/                                
+DEFINE cyclonev_hssi_ver                            ./libraries/cyclonev_hssi_ver/                           
+DEFINE cyclonev_pcie_hip_ver                        ./libraries/cyclonev_pcie_hip_ver/                       
 DEFINE altera                                       ./libraries/altera/                                      
 DEFINE lpm                                          ./libraries/lpm/                                         
 DEFINE sgate                                        ./libraries/sgate/                                       
 DEFINE altera_mf                                    ./libraries/altera_mf/                                   
 DEFINE altera_lnsim                                 ./libraries/altera_lnsim/                                
-DEFINE fiftyfivenm                                  ./libraries/fiftyfivenm/                                 
+DEFINE cyclonev                                     ./libraries/cyclonev/                                    

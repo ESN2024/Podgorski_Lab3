@@ -181,9 +181,13 @@
    type="VHDL"
    library="timer_0" />
  <file
-   path="simulation/submodules/gyroscope_data_sys_pio_0.vhd"
+   path="simulation/submodules/gyroscope_data_sys_piobp.vhd"
    type="VHDL"
-   library="pio_0" />
+   library="piobp" />
+ <file
+   path="simulation/submodules/gyroscope_data_sys_pio0_7seg.vhd"
+   type="VHDL"
+   library="pio0_7seg" />
  <file
    path="simulation/submodules/opencores_i2c.v"
    type="VERILOG"
@@ -226,7 +230,7 @@
    path="simulation/gyroscope_data_sys_rst_controller_001.vhd"
    type="VHDL" />
  <topLevel name="gyroscope_data_sys" />
- <deviceFamily name="max10" />
+ <deviceFamily name="cyclonev" />
  <modelMap
    controllerPath="gyroscope_data_sys.onchip_memory2_0"
    modelPath="gyroscope_data_sys.onchip_memory2_0" />

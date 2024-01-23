@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'gyroscope_data_sys'
 # SOPC Builder design path: ../../gyroscope_data_sys.sopcinfo
 #
-# Generated: Wed Jan 17 15:26:02 CET 2024
+# Generated: Tue Jan 23 14:49:36 CET 2024
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,4 +47,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # onchip_memory2_0
-memory 0x10000 0x19c40 cache
+memory 0x20000 0x33880 cache

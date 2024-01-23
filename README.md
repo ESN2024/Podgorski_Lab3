@@ -1,1 +1,0 @@
-# Podgorski_Lab3

@@ -24,6 +24,7 @@ begin
             "11111000" when inp = "0111" else 
             "10000000" when inp = "1000" else 
             "10010000" when inp = "1001" else
+				"10111111" when inp = "1111" else
             "11111111";
 
 end architecture;
