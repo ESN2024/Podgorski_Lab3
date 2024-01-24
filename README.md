@@ -57,5 +57,5 @@ https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/92308037-e6cb-44dd-8a
 
 # Conclusion :
 
-
+En résumé, ce projet d'affichages des données de l'ADXL345 sur des afficheurs 7 segments sur la carte de10lite a été une magnifique expérience. Un timer déclenche une routine d'interruption toutes les secondes qui actualise les données gyroscopiques. Un bouton poussoir permet de passer d'un axe à l'autre. Ce projet m'a permis de perfectionner mes connaissances liées à l'utilisation du protocole i2c, et m'a appris ce qu'était un accéléromètre.
 
