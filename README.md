@@ -36,6 +36,12 @@ La dernière étape est la calibration. L’idée est d’écrire dans les regis
 
 # Vidéo :
 
+
+
+https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/04859c87-7fd7-402c-8f5c-9b641bca6239
+
+
+
 # Conclusion :
 
 
