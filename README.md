@@ -40,6 +40,10 @@ Pour déterminer ces fameuses valeurs d'offset, la documentation de l'ADXL345 st
 
 
 
+https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/92308037-e6cb-44dd-8a30-40fdf8ba473e
+
+
+
 
 # Conclusion :
 
