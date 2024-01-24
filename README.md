@@ -21,6 +21,10 @@ Le système est composé de :
 
 # Configuration matérielle :
 
+![image](https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/7db04c65-e15c-489b-965c-5381dfaf728b)
+![image](https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/d3388708-02cb-4a2d-b1d4-ddd61ff68428)
+
+
 Afin de configurer le FPGA, nous avons créé le fichier Qsys ci-dessus qui contient toute la description matérielle de notre système.
 Nous avons ensuite créé un fichier vhdl « BCD_2_7SEG » qui contient un décodeur, ainsi que notre fichier top-level « gyroscope_data.vhd » qui instanciera 6 décodeurs (1 par afficheur 7 segments) et une fois les composants décrits dans le fichier Qsys.
 Après la mise en place des connections entre les signaux d’entrées-sorties et les broches physiques du FPGA dans le pin planner, et une compilation sans erreur, nous pouvons maintenant flasher le bitstream sur la carte.
@@ -39,11 +43,8 @@ Pour déterminer ces fameuses valeurs d'offset, la documentation de l'ADXL345 st
 
 # Initialisation du contenu de la RAM :
 
-Après l'ajout du fichier .hex au fichier Qsys, lors de la compilation du design, cette erreur apparaît :
+En suivant la procédure d'initialisation du contenu de la RAM dans le cours d'ESN10, le programme main.c se lance automatiquement sur la carte lorsque l'on flash le bitstream sur cette dernière.
 
-![image](https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/90d43ce8-e2c4-4d17-975f-9be525bee866)
-
-Je n'ai donc pas réussi à initialiser le contenu de la mémoire pour ce lab.
 
 # Vidéo :
 
