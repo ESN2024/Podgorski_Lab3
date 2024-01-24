@@ -36,8 +36,8 @@ __uint8_t axe = 0;
 
 __uint16_t variable_inutile_mais_utile;
 
-
-#define offsetx 0xff
+//#define offsetx 0xFE
+#define offsetx 0x02
 #define offsety 0x03
 #define offsetz 0x04
 
@@ -101,7 +101,9 @@ void actualisation_data()
 
 static void irqhandler_timer(void* context, alt_u32 id)
 {
-
+    alt_printf("DATAX0 : %x\n",acc_read(DATAX0));
+    alt_printf("DATAY0 : %x\n",acc_read(DATAY0));
+    alt_printf("DATAZ0 : %x\n",acc_read(DATAZ0));
 	data[0] = (acc_read(DATAX1) << 8 | acc_read(DATAX0));
 	data[1] = (acc_read(DATAY1) << 8 | acc_read(DATAY0));
 	data[2] = (acc_read(DATAZ1) << 8 | acc_read(DATAZ0));

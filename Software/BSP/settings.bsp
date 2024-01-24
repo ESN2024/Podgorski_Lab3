@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>23 janv. 2024 14:49:34</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1706017774850</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>24 janv. 2024 09:03:09</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1706083389695</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>.\</BspGeneratedLocation>
         <BspSettingsFile>..\BSP\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\gyroscope_data_sys.sopcinfo</SopcDesignFile>

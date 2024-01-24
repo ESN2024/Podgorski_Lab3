@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gyroscope_data
-Tue Jan 23 14:26:55 2024
+Wed Jan 24 08:56:51 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -262,7 +262,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 23 14:26:55 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jan 24 08:56:51 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Gyroscope_data                              ;
 ; Top-level Entity Name              ; gyroscope_data                              ;
@@ -5984,7 +5984,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -5994,66 +5994,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jan 23 14:25:27 2024
+    Info: Processing started: Wed Jan 24 08:54:15 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gyroscope_data -c Gyroscope_data
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12248): Elaborating Platform Designer system entity "gyroscope_data_sys.qsys"
-Info (12250): 2024.01.23.14:25:44 Progress: Loading Podgorski_Lab3/gyroscope_data_sys.qsys
-Info (12250): 2024.01.23.14:25:45 Progress: Reading input file
-Info (12250): 2024.01.23.14:25:45 Progress: Adding clk_0 [clock_source 18.1]
-Info (12250): 2024.01.23.14:25:46 Progress: Parameterizing module clk_0
-Info (12250): 2024.01.23.14:25:46 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
-Info (12250): 2024.01.23.14:25:46 Progress: Parameterizing module jtag_uart_0
-Info (12250): 2024.01.23.14:25:46 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
-Info (12250): 2024.01.23.14:25:46 Progress: Parameterizing module nios2_gen2_0
-Info (12250): 2024.01.23.14:25:46 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
-Info (12250): 2024.01.23.14:25:46 Progress: Parameterizing module onchip_memory2_0
-Info (12250): 2024.01.23.14:25:46 Progress: Adding opencores_i2c_0 [opencores_i2c 9.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module opencores_i2c_0
-Info (12250): 2024.01.23.14:25:47 Progress: Adding pio0_7seg [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module pio0_7seg
-Info (12250): 2024.01.23.14:25:47 Progress: Adding pio1_7seg [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module pio1_7seg
-Info (12250): 2024.01.23.14:25:47 Progress: Adding pio2_7seg [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module pio2_7seg
-Info (12250): 2024.01.23.14:25:47 Progress: Adding pio3_7seg [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module pio3_7seg
-Info (12250): 2024.01.23.14:25:47 Progress: Adding pio4_7seg [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module pio4_7seg
-Info (12250): 2024.01.23.14:25:47 Progress: Adding pio5_7seg [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module pio5_7seg
-Info (12250): 2024.01.23.14:25:47 Progress: Adding piobp [altera_avalon_pio 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module piobp
-Info (12250): 2024.01.23.14:25:47 Progress: Adding timer_0 [altera_avalon_timer 18.1]
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing module timer_0
-Info (12250): 2024.01.23.14:25:47 Progress: Building connections
-Info (12250): 2024.01.23.14:25:47 Progress: Parameterizing connections
-Info (12250): 2024.01.23.14:25:47 Progress: Validating
-Info (12250): 2024.01.23.14:25:48 Progress: Done reading input file
+Info (12250): 2024.01.24.08:54:43 Progress: Loading Podgorski_Lab3/gyroscope_data_sys.qsys
+Info (12250): 2024.01.24.08:54:44 Progress: Reading input file
+Info (12250): 2024.01.24.08:54:45 Progress: Adding clk_0 [clock_source 18.1]
+Info (12250): 2024.01.24.08:54:47 Progress: Parameterizing module clk_0
+Info (12250): 2024.01.24.08:54:47 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Info (12250): 2024.01.24.08:54:47 Progress: Parameterizing module jtag_uart_0
+Info (12250): 2024.01.24.08:54:47 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Info (12250): 2024.01.24.08:54:47 Progress: Parameterizing module nios2_gen2_0
+Info (12250): 2024.01.24.08:54:47 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Info (12250): 2024.01.24.08:54:47 Progress: Parameterizing module onchip_memory2_0
+Info (12250): 2024.01.24.08:54:47 Progress: Adding opencores_i2c_0 [opencores_i2c 9.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module opencores_i2c_0
+Info (12250): 2024.01.24.08:54:48 Progress: Adding pio0_7seg [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module pio0_7seg
+Info (12250): 2024.01.24.08:54:48 Progress: Adding pio1_7seg [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module pio1_7seg
+Info (12250): 2024.01.24.08:54:48 Progress: Adding pio2_7seg [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module pio2_7seg
+Info (12250): 2024.01.24.08:54:48 Progress: Adding pio3_7seg [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module pio3_7seg
+Info (12250): 2024.01.24.08:54:48 Progress: Adding pio4_7seg [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module pio4_7seg
+Info (12250): 2024.01.24.08:54:48 Progress: Adding pio5_7seg [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module pio5_7seg
+Info (12250): 2024.01.24.08:54:48 Progress: Adding piobp [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module piobp
+Info (12250): 2024.01.24.08:54:48 Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing module timer_0
+Info (12250): 2024.01.24.08:54:48 Progress: Building connections
+Info (12250): 2024.01.24.08:54:48 Progress: Parameterizing connections
+Info (12250): 2024.01.24.08:54:48 Progress: Validating
+Info (12250): 2024.01.24.08:54:50 Progress: Done reading input file
 Info (12250): Gyroscope_data_sys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info (12250): Gyroscope_data_sys.piobp: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Gyroscope_data_sys: Generating gyroscope_data_sys "gyroscope_data_sys" for QUARTUS_SYNTH
 Info (12250): Jtag_uart_0: Starting RTL generation for module 'gyroscope_data_sys_jtag_uart_0'
-Info (12250): Jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=gyroscope_data_sys_jtag_uart_0 --dir=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0002_jtag_uart_0_gen//gyroscope_data_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=gyroscope_data_sys_jtag_uart_0 --dir=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0002_jtag_uart_0_gen//gyroscope_data_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Jtag_uart_0: Done RTL generation for module 'gyroscope_data_sys_jtag_uart_0'
 Info (12250): Jtag_uart_0: "gyroscope_data_sys" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info (12250): Nios2_gen2_0: "gyroscope_data_sys" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info (12250): Onchip_memory2_0: Starting RTL generation for module 'gyroscope_data_sys_onchip_memory2_0'
-Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=gyroscope_data_sys_onchip_memory2_0 --dir=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0003_onchip_memory2_0_gen//gyroscope_data_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=gyroscope_data_sys_onchip_memory2_0 --dir=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0003_onchip_memory2_0_gen//gyroscope_data_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Onchip_memory2_0: Done RTL generation for module 'gyroscope_data_sys_onchip_memory2_0'
 Info (12250): Onchip_memory2_0: "gyroscope_data_sys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info (12250): Opencores_i2c_0: "gyroscope_data_sys" instantiated opencores_i2c "opencores_i2c_0"
 Info (12250): Pio0_7seg: Starting RTL generation for module 'gyroscope_data_sys_pio0_7seg'
-Info (12250): Pio0_7seg:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=gyroscope_data_sys_pio0_7seg --dir=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0005_pio0_7seg_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0005_pio0_7seg_gen//gyroscope_data_sys_pio0_7seg_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio0_7seg:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=gyroscope_data_sys_pio0_7seg --dir=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0005_pio0_7seg_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0005_pio0_7seg_gen//gyroscope_data_sys_pio0_7seg_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio0_7seg: Done RTL generation for module 'gyroscope_data_sys_pio0_7seg'
 Info (12250): Pio0_7seg: "gyroscope_data_sys" instantiated altera_avalon_pio "pio0_7seg"
 Info (12250): Piobp: Starting RTL generation for module 'gyroscope_data_sys_piobp'
-Info (12250): Piobp:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=gyroscope_data_sys_piobp --dir=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0006_piobp_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0006_piobp_gen//gyroscope_data_sys_piobp_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Piobp:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=gyroscope_data_sys_piobp --dir=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0006_piobp_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0006_piobp_gen//gyroscope_data_sys_piobp_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Piobp: Done RTL generation for module 'gyroscope_data_sys_piobp'
 Info (12250): Piobp: "gyroscope_data_sys" instantiated altera_avalon_pio "piobp"
 Info (12250): Timer_0: Starting RTL generation for module 'gyroscope_data_sys_timer_0'
-Info (12250): Timer_0:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=gyroscope_data_sys_timer_0 --dir=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0007_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0007_timer_0_gen//gyroscope_data_sys_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Timer_0:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=gyroscope_data_sys_timer_0 --dir=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0007_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0007_timer_0_gen//gyroscope_data_sys_timer_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Timer_0: Done RTL generation for module 'gyroscope_data_sys_timer_0'
 Info (12250): Timer_0: "gyroscope_data_sys" instantiated altera_avalon_timer "timer_0"
 Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -6072,19 +6072,19 @@ Info (12250): Mm_interconnect_0: "gyroscope_data_sys" instantiated altera_mm_int
 Info (12250): Irq_mapper: "gyroscope_data_sys" instantiated altera_irq_mapper "irq_mapper"
 Info (12250): Rst_controller: "gyroscope_data_sys" instantiated altera_reset_controller "rst_controller"
 Info (12250): Cpu: Starting RTL generation for module 'gyroscope_data_sys_nios2_gen2_0_cpu'
-Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=gyroscope_data_sys_nios2_gen2_0_cpu --dir=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0010_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9745_4323322112906704554.dir/0010_cpu_gen//gyroscope_data_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*) Starting Nios II generation
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   Checking for plaintext license.
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   LM_LICENSE_FILE environment variable is empty
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   Plaintext license not found.
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   No license required to generate encrypted Nios II/e.
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   Elaborating CPU configuration settings
-Info (12250): Cpu: # 2024.01.23 14:26:25 (*)   Creating all objects for CPU
-Info (12250): Cpu: # 2024.01.23 14:26:26 (*)   Generating RTL from CPU objects
-Info (12250): Cpu: # 2024.01.23 14:26:26 (*)   Creating plain-text RTL
-Info (12250): Cpu: # 2024.01.23 14:26:27 (*) Done Nios II generation
+Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=gyroscope_data_sys_nios2_gen2_0_cpu --dir=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0010_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/titou/AppData/Local/Temp/alt9746_1481006118339268435.dir/0010_cpu_gen//gyroscope_data_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2024.01.24 08:55:49 (*) Starting Nios II generation
+Info (12250): Cpu: # 2024.01.24 08:55:49 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   LM_LICENSE_FILE environment variable is empty
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2024.01.24 08:55:50 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2024.01.24 08:55:52 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2024.01.24 08:55:52 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2024.01.24 08:55:54 (*) Done Nios II generation
 Info (12250): Cpu: Done RTL generation for module 'gyroscope_data_sys_nios2_gen2_0_cpu'
 Info (12250): Cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info (12250): Nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -6433,7 +6433,7 @@ Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "gyro
 Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "gyroscope_data_sys:u0|altera_reset_controller:rst_controller_001" File: C:/Users/titou/Documents/Polytech 5A/De10Lite/Podgorski_Lab3/db/ip/gyroscope_data_sys/gyroscope_data_sys.v Line: 489
 Info (12128): Elaborating entity "BCD_2_7SEG" for hierarchy "BCD_2_7SEG:u1" File: C:/Users/titou/Documents/Polytech 5A/De10Lite/Podgorski_Lab3/gyroscope_data.vhd Line: 75
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.01.23.14:26:39 Progress: Loading slde8b7fb8c/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.01.24.08:56:19 Progress: Loading slde8b7fb8c/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -6479,10 +6479,10 @@ Info (21057): Implemented 2827 device resources after synthesis - the final reso
     Info (21061): Implemented 2560 logic cells
     Info (21064): Implemented 208 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4953 megabytes
-    Info: Processing ended: Tue Jan 23 14:26:55 2024
-    Info: Elapsed time: 00:01:28
-    Info: Total CPU time (on all processors): 00:01:12
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Wed Jan 24 08:56:51 2024
+    Info: Elapsed time: 00:02:36
+    Info: Total CPU time (on all processors): 00:01:24
 
 
 +------------------------------------------+
