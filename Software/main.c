@@ -101,9 +101,9 @@ void actualisation_data()
 
 static void irqhandler_timer(void* context, alt_u32 id)
 {
-    alt_printf("DATAX0 : %x\n",acc_read(DATAX0));
-    alt_printf("DATAY0 : %x\n",acc_read(DATAY0));
-    alt_printf("DATAZ0 : %x\n",acc_read(DATAZ0));
+    //alt_printf("DATAX0 : %x\n",acc_read(DATAX0));
+    //alt_printf("DATAY0 : %x\n",acc_read(DATAY0));
+    //alt_printf("DATAZ0 : %x\n",acc_read(DATAZ0));
 	data[0] = (acc_read(DATAX1) << 8 | acc_read(DATAX0));
 	data[1] = (acc_read(DATAY1) << 8 | acc_read(DATAY0));
 	data[2] = (acc_read(DATAZ1) << 8 | acc_read(DATAZ0));
@@ -112,6 +112,7 @@ static void irqhandler_timer(void* context, alt_u32 id)
 	if (data[1] & 0x8000) data[1] = -(0xFFFF - data[1] + 1);
 	if (data[2] & 0x8000) data[2] = -(0xFFFF - data[2] + 1);
 
+    // Scale_factor
 	data[0]=data[0]*3.9;
 	data[1]=data[1]*3.9;
 	data[2]=data[2]*3.9;
