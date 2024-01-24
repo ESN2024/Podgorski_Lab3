@@ -6,7 +6,8 @@ Nous interfacerons le Nios II avec l'ADXL345 via le protocole de communication i
 
 # Architecture du système
 
-(image canva architecture)
+![image](https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/b8e7f880-a901-4766-a6e3-4ab3d4e39fc9)
+
 
 Le système est composé de :
 •	Un processeur Nios II
