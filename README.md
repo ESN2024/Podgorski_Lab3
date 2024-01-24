@@ -34,6 +34,7 @@ La première étape est donc la création de fonctions de lecture de d’écritu
 Il faut ensuite, lors de l’interruption du timer, lire les valeurs des registres en question, leur appliquer le facteur de sensibilité, et actualiser les valeurs sur les afficheurs 7 segments selon l’axe (x,y ou z) déterminer par l’interruption du bouton poussoir.
 
 La dernière étape est la calibration. L’idée est d’écrire dans les registres d’offset de l’accéléromètre afin d’y appliquer une valeur d’offset déterminée à la main pour chaque axe.
+Pour déterminer ces fameuses valeurs d'offset, la documentation de l'ADXL345 stipule, pour chaque axe, de noter la valeur mesurée à plat du poids faible, d'y effectuer le complément à 2, puis de diviser la valeur résultante par 4. Nous obtenons ainsi les valeurs d'offset à appliquer sur chaque axe.
 
 # Vidéo :
 
