@@ -36,6 +36,15 @@ Il faut ensuite, lors de l’interruption du timer, lire les valeurs des registr
 La dernière étape est la calibration. L’idée est d’écrire dans les registres d’offset de l’accéléromètre afin d’y appliquer une valeur d’offset déterminée à la main pour chaque axe.
 Pour déterminer ces fameuses valeurs d'offset, la documentation de l'ADXL345 stipule (étant donné que nous sommes en full-résolution), pour chaque axe, de noter la valeur mesurée à plat du poids faible, d'y effectuer le complément à 2, puis de diviser la valeur résultante par ~4. Nous obtenons ainsi les valeurs d'offset à appliquer sur chaque axe.
 
+
+# Initialisation du contenu de la RAM :
+
+Après l'ajout du fichier .hex au fichier Qsys, lors de la compilation du design, cette erreur apparaît :
+
+![image](https://github.com/ESN2024/Podgorski_Lab3/assets/145102054/90d43ce8-e2c4-4d17-975f-9be525bee866)
+
+Je n'ai donc pas réussi à initialiser le contenu de la mémoire pour ce lab.
+
 # Vidéo :
 
 
